@@ -1,0 +1,307 @@
+/*
+Autor: Jorge Marcelo
+Data de Criação: 31/07/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+Instagram: https://www.instagram.com/10_stronger/
+Threads: https://www.threads.net/@10_stronger
+*/ 
+
+
+/*Configurações padrão*/
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+transition: all 0.5s ease;
+}
+
+/*Fonte e background*/
+body{
+font-weight: sans-serif;
+background-image: linear-gradient(120deg,rgb(255, 136, 0), rgb(248, 133, 133),rgb(255, 174, 0)); 
+}
+
+/*Texto*/
+h1{
+display: grid;
+place-items: center;
+color: #fff;
+font-size: 1.5rem
+}
+
+/*Imagem*/
+picture{
+display: grid;
+place-items: center;
+margin: 20px;
+}
+
+
+/*Tabela*/
+table{
+margin-left: 10px;
+}
+
+
+/*Configurações de posicionamneto e responsividade*/
+.container{
+height: 100vh;
+width: 100vw;
+display: grid;
+place-items: center;
+}
+
+/*Container da calculadora*/
+.calculadora{
+position: relative;
+height: auto;
+width: auto;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 30px black;
+border: 3px solid orangered;
+background-color: rgb(53, 52, 52);
+}
+
+
+
+/*Configurações do botão*/
+.container-theme{
+position: absolute;
+top: 20px;
+background-color: #111;
+border-radius: 50px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 26px;
+width: 50px;
+transform: scale(1.5);
+}
+  
+/*Configurações do circulo*/
+.circle {
+background-color: #fff;
+border-radius: 50%;
+position: absolute;
+top: 2px;
+left: 26px;
+height: 22px;
+width: 22px;
+transition: transform 0.2s linear;
+}
+
+/*scondendo o checkbox*/
+.checkbox{
+opacity: 0;
+}
+
+/*Alterando a posição do circulo quando ele for checado pelo checkbox*/
+.checkbox:checked + .container-theme .circle {
+transform: translateX(-24px);
+}
+
+/*Definindo cor e posição dos icones de sol e lua*/
+.fa-moon {
+color: #0f1ef1;
+margin-left: 5px;
+}
+
+.fa-sun {
+color: #f39c12;
+margin-right: 4px;
+}
+
+/*Container dos botões de pay e pause*/
+.music-container{
+display: flex;
+flex-direction: row;
+position: absolute;
+top: 0px;
+right: 20px;
+margin-left: 5px;
+}
+
+.play-buttons{
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+
+.pause-buttons{
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+
+/*Visor aonde aparece os numeros*/
+#display{
+height: 50px;
+width: auto;
+max-width: 270px;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+font-size: 2rem;
+border: 3px solid orangered;
+background-color: transparent;
+margin: 30px 0;
+border-radius: 10px;
+outline: 0;
+color: red;
+font-weight: 900;
+}
+
+
+/*Configuração de todos os botões*/
+button{
+height: 50px;
+width: 50px;
+border: 0;
+border-radius: 30px;
+margin: 5px;
+font-size: 1.8rem;
+font-weight: 900;
+cursor: pointer;
+}
+
+/*Botões de operações matermaticas*/
+.operacoes{
+background-color: rgb(255, 123, 0);
+border: 2px solid rgb(0, 0, 0);
+}
+
+.operacoes:hover{
+background-color: rgb(255, 187, 0);
+color: rgb(255, 0, 0);
+}
+
+/*Numeros d calculadora*/
+.numeros{
+border: 2px solid rgb(209, 208, 208);
+color: orangered;
+background-color: #e3e3e4;
+}
+
+.numeros:hover{
+background-color: red;
+color: black;
+}
+
+
+button#igual:hover{
+background-color: red;
+color: black;
+}
+
+/*Rodape e redes sociais*/
+footer{
+margin-top: 10px;
+}
+
+.github{
+background-color: rgb(66, 66, 66);
+border: 2px solid rgb(255, 255, 255);
+}
+
+.github:hover{
+background-color: red;
+}
+
+.linkedin{
+background-color: rgb(0, 0, 255);
+border: 2px solid rgb(255, 255, 255);
+}
+
+.linkedin:hover{
+background-color: red;
+}
+
+.instagram{
+background-color: rgb(255, 0, 179);
+border: 2px solid rgb(255, 255, 255);
+}
+
+.instagram:hover{
+background-color: red;
+
+}
+
+.margin-button{
+margin-top: 3px;
+margin-right: 2px;
+}
+
+.margin-button-github{
+margin-top: 6px;
+margin-right: 2px;
+}
+
+/*Imagem do efeito de fade*/
+.efect
+{
+display: flex;
+width: 102px;
+height: 70px;
+position: absolute;
+bottom: 35px;
+opacity: 1;
+animation-name: fade; /*Nome da animação*/
+animation-duration: 3s; /*Duração da animação*/
+animation-iteration-count: infinite; /*Contagem que aquela animaçãao sera executada*/
+z-index: 1;
+}
+
+
+@keyframes fade {
+0% { /*Animação cmeça em 0*/
+opacity: 0;
+}
+50%  { /*Atingindo seus 50% ela começa a aparecer*/
+opacity: 1;
+}
+100% { /*Ao chegar o 100% ela perde sua opacidade total e com animation infinite ela retorna esse mesmo processo infinitas vezes*/
+opacity: 0;
+}
+}
+
+
+/* Classes de mudança de tema*/
+
+.calculadora.light-mode{
+background-color: white;
+}
+
+.numeros.light-mode{
+background-color: #313131;
+border-color: black;
+}
+
+.numeros.light-mode:hover{
+background-color: #ff0000;
+color: #ffffff;
+}
+
+h1.light-mode{
+color: black;
+}
+
+.github.light-mode{
+border-color: rgb(0, 0, 0);
+}
+
+.linkedin.light-mode{
+border-color: black;
+}
+
+.instagram.light-mode{
+border-color: black;
+}
+
+
+
+
+

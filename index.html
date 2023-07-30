@@ -1,0 +1,133 @@
+
+<!--
+Autor: Jorge Marcelo
+Data de Criação: 31/07/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+Instagram: https://www.instagram.com/10_stronger/
+Threads: https://www.threads.net/@10_stronger
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Calculadora</title>
+</head>
+<body>
+
+<!--Container e calculadora-->
+<main class="container">
+<section class="calculadora dark">
+<!--Botão de mudança de tema-->
+<aside>
+<input type="checkbox" class="checkbox" id="change" />
+<label class="container-theme" for="change">
+<i class="fas fa-moon"></i> 
+<i class="fas fa-sun"></i>
+<div class="circle"></div>
+</aside>
+
+<!--Botões de play e pause de musica-->
+<picture class="music-container">
+<img src="assets/img/play-white.png" class="play-buttons" id="playMusic">
+<img src="assets/img/pause-white.png" class="pause-buttons" id="pauseMusic">
+<audio  src="assets/music/Naruto Music.mp3" id="music"></audio>
+</picture>
+
+
+<!--Visor da Calculadora-->
+<section>
+<input id="display">
+</section>
+
+<!--Tabela com os botões da calculadora-->
+<section id="buttons">
+<table>
+<tr>
+<td><button class="operacoes"  data-value="C">C</button></td>
+<td><button class="operacoes"  data-value="/">&divide;</button></td>
+<td><button class="operacoes"  data-value="*">&times;</button></td>
+<td><button class="operacoes" data-value="backspace"><</button></td>
+</tr>
+
+<tr>
+<td><button class="numeros"  data-value="7">7</button></td>
+<td><button class="numeros"  data-value="8">8</button></td>
+<td><button class="numeros"  data-value="9">9</button></td>
+<td><button class="operacoes" data-value="-">-</button></td>
+</tr>
+
+
+<tr>
+<td><button class="numeros"  data-value="4">4</button></td>
+<td><button class="numeros"  data-value="5">5</button></td>
+<td><button class="numeros"  data-value="6">6</button></td>
+<td><button class="operacoes" data-value="+">+</button></td>
+</tr>
+
+
+<tr>
+<td><button class="numeros"  data-value="0">0</button></td>
+<td><button class="numeros"  data-value="1">1</button></td>
+<td><button class="numeros"  data-value="2">2</button></td>
+<td><button class="numeros"  data-value="3">3</button></td>
+</tr>
+
+
+<tr>
+<td><button class="operacoes"  data-value="=">=</button></td>
+<td><button class="operacoes"  data-value="(">(</button></td>
+<td><button class="operacoes"  data-value=")">)</button></td>
+<td><button class="operacoes"  data-value=".">.</button></td>
+</tr>
+</table>
+
+<!--Rodape com as redes sociais-->
+<footer>
+<table>
+<tr>
+<td><button class="github" id="github">
+<img src="assets/img/github.png" class="margin-button-github">
+</button></td>
+
+<td><button class="linkedin" id="linkedin">
+<img src="assets/img/linkedin.png">
+</button></td>
+
+
+<td><button class="instagram" id="instagram">
+<img src="assets/img/insta.png" class="margin-button">
+</button></td>
+
+
+<td><button class="github" id="threads">
+<img src="assets/img/threads.png" class="margin-button">
+</button></td>
+</tr>
+
+</table>
+</footer>
+
+<!--Nome do Dsesnvolvedor-->
+<h1 class="title">Made By: Jorge Marcelo</h1>
+
+<!--Simbolo de Konoha com animação de fade-->
+<picture>
+<img src="assets/img/konoha.png">
+<img src="assets/img/efect.png" class="efect">
+</picture>
+
+
+</section>
+</section>
+</main>
+  
+<!--Fonte Awsome--> 
+<script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+<!--Arquivo Javascript-->
+<script src="assets/js/script.js"></script>   
+</body>
+</html>
