@@ -248,12 +248,15 @@ margin-right: 2px;
 display: flex;
 width: 102px;
 height: 70px;
-position: absolute;
+position: relative;
+top: -65px; 
+left: 0; 
 opacity: 1;
 animation-name: fade; /*Nome da animação*/
 animation-duration: 3s; /*Duração da animação*/
 animation-iteration-count: infinite; /*Contagem que aquela animaçãao sera executada*/
 z-index: 1;
+margin-bottom: -70px;
 }
 
 
