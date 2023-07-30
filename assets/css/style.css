@@ -27,14 +27,15 @@ h1{
 display: grid;
 place-items: center;
 color: #fff;
-font-size: 1.5rem
+font-size: 1.5rem;
+margin-bottom: 10px;
 }
 
 /*Imagem*/
 picture{
 display: grid;
 place-items: center;
-margin: 20px;
+position: relative;
 }
 
 
@@ -119,7 +120,7 @@ margin-right: 4px;
 display: flex;
 flex-direction: row;
 position: absolute;
-top: 0px;
+top: 15px;
 right: 20px;
 margin-left: 5px;
 }
@@ -172,7 +173,7 @@ cursor: pointer;
 .operacoes{
 background-color: rgb(255, 123, 0);
 border: 2px solid rgb(0, 0, 0);
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 }
 
 .operacoes:hover{
@@ -248,7 +249,7 @@ display: flex;
 width: 102px;
 height: 70px;
 position: fixed;
-top: 710px;
+top: 715px;
 opacity: 1;
 animation-name: fade; /*Nome da animação*/
 animation-duration: 3s; /*Duração da animação*/
