@@ -248,7 +248,7 @@ margin-right: 2px;
 display: flex;
 width: 102px;
 height: 70px;
-position: fixed;
+position: absolute;
 opacity: 1;
 animation-name: fade; /*Nome da animação*/
 animation-duration: 3s; /*Duração da animação*/
